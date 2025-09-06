@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,8 @@
     <title></title>
 </head>
 
-<body>
-    <div class="header bg-whhite h-16  flex flex-row items-center pt-2">
+<body class=" bg-white dark:bg-[#101828] dark:text-white overflow-x: hidden; transition-colors duration-300">
+    <div class="header bg-transparent h-16  flex flex-row items-center pt-2">
         <div class="h-full w-1/2 ">
             <a class="flex h-full flex-row items-center ml-20">
                 <img src="./img/Digitalflow-logo.png" class="h-10 w-10 ">
@@ -23,7 +23,11 @@
             <a>Use cases</a>
             <a>Pricing</a>
             <a>Blog</a>
-            <button class=" h-10 w-40  border bg-white p-1 rounded-xl hover:bg-gray-950/20 duration-300">Request a
+            <button id="themeToggle" 
+            class=" h-[16px] w-[16px] p-0.5 dark:bg-gray-700 transition">
+                <img id="themeIcon" src="./img/moon.png" alt="Toggle Theme" height="16px" width="16px" >
+            </button>
+            <button class=" h-10 w-40  border bg-transparent p-1 rounded-xl hover:bg-gray-950/20 duration-300">Request a
                 quote</button>
         </div>
     </div>
@@ -42,14 +46,14 @@
             <img src="./img/circle-img.png" class="h-96 w-96">
         </div>
     </div>
-    <div class=" w-screen mt-33 ">
-        <div class="w-1/2 ml-20">
-            <div class="w-28 text-center bg-purple-500 rounded-md text-white mt-6 font-medium text-[24px]">Services
+    <div class="px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
+        <div class="w-1/2">
+            <div class=" inline-block p-1 text-center bg-purple-500 rounded-md text-white mt-4 font-medium text-[24px]">Services
             </div>
-            <p class=" pr-54 text-[15px] leading-6 mt-3.5">At our digital marketing agency, we offer a range of services
+            <p class=" pr-3 text-gray-600 text-[15px] leading-6 mt-3.5">At our digital marketing agency, we offer a range of services
                 to help businesses grow and succeed online. These services include:</p>
         </div>
-        <div class="flex justify-center">
+        <div>
             <div class=" service-box mt-10 grid grid-cols-2 gap-10 ">
                 <div class="  bg-gray-100 p-6 border-2  border-black rounded-[30px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
@@ -59,18 +63,18 @@
                                 <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
                                     →
                                 </div>
-                                <span class="text-base lg:text-lg">Learn more</span>
+                                <span class="text-base text-black lg:text-lg">Learn more</span>
                             </button>
                         </div>
 
                     </div>
                 </div>
-                <div class=" h-52 p-6 w-[535px] text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div class=" p-6 text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Pay-per-click advertising</h3>
                             <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
+                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -79,12 +83,12 @@
 
                     </div>
                 </div>
-                <div class=" h-52 p-6 w-[535px] text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div class=" p-6 text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Social Media Marketing</h3>
                             <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
+                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -93,7 +97,7 @@
 
                     </div>
                 </div>
-                <div class=" h-52 bg-gray-100 p-6 w-[535px] border-2 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div class=" bg-gray-100 p-6 border-2 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold text-black mb-8 lg:mb-16">Email Marketing</h3>
@@ -101,18 +105,18 @@
                                 <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
                                     →
                                 </div>
-                                <span class="text-base lg:text-lg">Learn more</span>
+                                <span class="text-base text-black lg:text-lg">Learn more</span>
                             </button>
                         </div>
 
                     </div>
                 </div>
-                <div class=" h-52 p-6 w-[535px] text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div class=" p-6 text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Content Creation</h3>
                             <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
+                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -121,12 +125,12 @@
 
                     </div>
                 </div>
-                <div class=" h-52 p-6 text-white w-[535px] border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div class=" p-6 text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Analytics and Tracking</h3>
                             <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
+                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -139,8 +143,8 @@
     </div>
     <div class="px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
         <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] p-8 sm:p-12 lg:p-16 relative overflow-hidden">
-            <div class="max-w-lg relative z-10">
-                <h2 class="text-xl sm:text-2xl font-semibold mb-4 lg:mb-6">
+            <div class="max-w-lg relative z-10 dark:text-black">
+                <h2 class="text-xl text-black  sm:text-2xl font-semibold mb-4 lg:mb-6">
                     Let's make things happen
                 </h2>
                 <p class="text-base lg:text-lg text-gray-600 mb-6 lg:mb-8">
@@ -436,6 +440,37 @@
             </div>
         </div>
     </div>
+    <script>
+    const btn = document.getElementById("themeToggle");
+    const icon = document.getElementById("themeIcon");
+    const html = document.documentElement;
+
+    function setTheme(dark) {
+      if (dark) {
+        html.classList.add("dark");
+        html.classList.remove("light");
+        document.body.className =
+          " text-white transition-colors duration-300";
+        icon.src = "./img/sun.png";
+        document.body.style.backgroundColor = "#101828";
+        img.style.filter = "brightness(0) saturate(100%) invert(24%) sepia(89%) saturate(7500%) hue-rotate(2deg) brightness(99%) contrast(112%)"; // your sun image
+      } else {
+        html.classList.remove("dark");
+        html.classList.add("light");
+        document.body.className =
+          "bg-white text-black transition-colors duration-300";
+        icon.src = "./img/moon.png"; // your moon image
+      }
+    }
+
+    // Default light mode
+    setTheme(false);
+
+    // Toggle theme on click
+    btn.addEventListener("click", () => {
+      setTheme(!html.classList.contains("dark"));
+    });
+  </script>
 </body>
 
 </html>
