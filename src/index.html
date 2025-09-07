@@ -5,38 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title></title>
 </head>
 
-<body class=" bg-white dark:bg-[#101828] dark:text-white overflow-x: hidden; transition-colors duration-300">
-    <div class="header bg-transparent h-16  flex justify-between items-center">
-        <div class="logo">
-            <a class="flex h-full items-center w-1/2 ml-10 md-ml-10 lg:ml-20 xl:ml-20 2xl:ml-20" href="#">
+<body class=" bg-white dark:text-white overflow-x: hidden; transition-colors duration-300">
+    <div class="header bg-transparent h-16 ml-7 mr-7 flex justify-between items-center">
+        <div class="logo w-1/2">
+            <a class="flex h-full items-center" href="#">
                 <img src="./img/Digitalflow-logo.png" class="h-10 w-10 ">
                 <p class="inline m-0.5 font-semibold text-xl">DigitalFlow</p>
             </a>
         </div>
-        <nav class="hidden lg:flex nav-option h-full justify-between w-1/2 items-center text-sm">
-            <a>About Us</a>
-            <a>Services</a>
-            <a>Use cases</a>
-            <a>Pricing</a>
-            <a>Blog</a>
-            <button id="themeToggle" 
-            class=" h-[16px] w-[16px] p-0.5 dark:bg-gray-700 transition">
-                <img id="themeIcon" src="./img/moon.png" alt="Toggle Theme" height="16px" width="16px" >
+        <nav class="hidden mid:flex lg:flex nav-option mr-2 h-full justify-between w-[30%] items-center text-sm">
+            <a href="#" class=" hover:text-purple-500">About Us</a>
+            <a href="#" class=" hover:text-purple-500">Services</a>
+            <a href="#" class=" hover:text-purple-500">Use cases</a>
+            <a href="#" class=" hover:text-purple-500">Pricing</a>
+            <a href="#" class=" hover:text-purple-500">Blog</a>
+        </nav>
+        <div class=" w-1/5 lg:w-1/6 flex mt-1.5 justify-between items-center">
+            <button id="themeToggle"
+                class=" h-[24px] w-[24px] md:mr-5 p-0.5 transition sm:inline-block rounded-lg hover:bg-gray-600/20  duration-300">
+                <img id="themeIcon" src="./img/moon.png" alt="Toggle Theme" height="20px" width="20px">
             </button>
-            <button class=" h-10 w-40  border bg-transparent p-1 rounded-xl hover:bg-gray-950/20 duration-300">Request a
+            <button
+                class=" hidden lg:inline-block h-10 w-40 border bg-transparent p-1 rounded-xl hover:bg-gray-600/20 duration-300">Request
+                a
                 quote</button>
-            </nav>
-        <div class="flex lg:hidden justify-end pr-7">
-        <button id="mobileMenuBtn" class="text-3xl">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+            <div class="flex lg:hidden justify-end ">
+                <button id="mobileMenuBtn" class="text-3xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
     </div>
+    <div id="mobileMenu" class=" hidden dark:text-white dark:bg-[#101828]">
+        <div class=" grid items-center grid-cols-1 p-5 border-t border-gray-400 w-full h-80 text-lg font-medium">
+            <a href="#" class=" hover:text-purple-500">About Us</a>
+            <a href="#" class=" hover:text-purple-500  ">Services</a>
+            <a href="#" class=" hover:text-purple-500 ">Use cases</a>
+            <a href="#" class=" hover:text-purple-500 ">Pricing</a>
+            <a href="#" class=" hover:text-purple-500 ">Blog</a>
+            <button class="h-10 w-40 border bg-transparent p-1 rounded-xl hover:bg-gray-600/20 duration-300">Request a
+                quote</button>
+        </div>
     </div>
-    <div class="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-2 sm:text-center md:text-center flex-row px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
+    <div
+        class="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-2 text-center md:text-start lg:text-start flex-row px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
         <div class="">
             <p class="text-5xl font-bold">
                 Navigating the digital landscape for success
@@ -53,9 +71,11 @@
     </div>
     <div class="px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
         <div class="w-1/2">
-            <div class=" inline-block p-1 text-center bg-purple-500 rounded-md text-white font-medium text-[24px]">Services
+            <div class=" inline-block p-1 text-center bg-purple-500 rounded-md text-white font-medium text-[24px]">
+                Services
             </div>
-            <p class=" pr-3 text-gray-600 text-[15px] leading-6 mt-3.5">At our digital marketing agency, we offer a range of services
+            <p class=" pr-3 text-gray-600 text-[15px] leading-6 mt-3.5">At our digital marketing agency, we offer a
+                range of services
                 to help businesses grow and succeed online. These services include:</p>
         </div>
         <div>
@@ -63,9 +83,12 @@
                 <div class="  bg-gray-100 p-6 border-2  border-black rounded-[30px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
-                            <h3 class="text-xl lg:text-2xl font-semibold text-black mb-8 lg:mb-16">Search engine optimization</h3>
-                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
+                            <h3 class="text-xl lg:text-2xl font-semibold text-black mb-8 lg:mb-16">Search engine
+                                optimization</h3>
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base text-black lg:text-lg">Learn more</span>
@@ -74,12 +97,15 @@
 
                     </div>
                 </div>
-                <div class=" p-6 text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
-                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                <div
+                    class=" p-6 text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Pay-per-click advertising</h3>
-                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -88,12 +114,15 @@
 
                     </div>
                 </div>
-                <div class=" p-6 text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div
+                    class=" p-6 text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Social Media Marketing</h3>
-                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -106,8 +135,10 @@
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold text-black mb-8 lg:mb-16">Email Marketing</h3>
-                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-black text-white rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base text-black lg:text-lg">Learn more</span>
@@ -116,12 +147,15 @@
 
                     </div>
                 </div>
-                <div class=" p-6 text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div
+                    class=" p-6 text-white border-2 bg-purple-500 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Content Creation</h3>
-                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -130,12 +164,15 @@
 
                     </div>
                 </div>
-                <div class=" p-6 text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
+                <div
+                    class=" p-6 text-white border-2 bg-slate-800 border-black rounded-[38px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
                             <h3 class="text-xl lg:text-2xl font-semibold mb-8 lg:mb-16">Analytics and Tracking</h3>
-                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
-                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all gap-3">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-white text-black rounded-full flex items-center justify-center">
                                     →
                                 </div>
                                 <span class="text-base lg:text-lg">Learn more</span>
@@ -172,7 +209,8 @@
             </p>
         </div>
         <div class=" space-y-4">
-            <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
+            <div
+                class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
                 <div class="p-6 sm:p-8 lg:p-12 cursor-pointer">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
@@ -186,12 +224,14 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
+            <div
+                class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
                 <div class="p-6 sm:p-8 lg:p-12 cursor-pointer">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
                             <span class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black">02</span>
-                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Research and Strategy Development</h3>
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Research and Strategy
+                                Development</h3>
                         </div>
                         <div
                             class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-black bg-gray-100 flex items-center justify-center transition-all duration-300 flex-shrink-0">
@@ -200,7 +240,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
+            <div
+                class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
                 <div class="p-6 sm:p-8 lg:p-12 cursor-pointer">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
@@ -214,12 +255,14 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
+            <div
+                class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
                 <div class="p-6 sm:p-8 lg:p-12 cursor-pointer">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
                             <span class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black">04</span>
-                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Monitoring and Optimization</h3>
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Monitoring and
+                                Optimization</h3>
                         </div>
                         <div
                             class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-black bg-gray-100 flex items-center justify-center transition-all duration-300 flex-shrink-0">
@@ -228,12 +271,14 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
+            <div
+                class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
                 <div class="p-6 sm:p-8 lg:p-12 cursor-pointer">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
                             <span class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black">05</span>
-                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Reporting and Communication</h3>
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Reporting and
+                                Communication</h3>
                         </div>
                         <div
                             class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-black bg-gray-100 flex items-center justify-center transition-all duration-300 flex-shrink-0">
@@ -242,12 +287,14 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
+            <div
+                class="bg-gray-100 rounded-[30px] lg:rounded-[45px] border-2 border-black shadow-[0px_5px_0px_0px_#000] transition-all duration-300">
                 <div class="p-6 sm:p-8 lg:p-12 cursor-pointer">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
                             <span class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black">06</span>
-                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Continual Improvement</h3>
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold text-black">Continual Improvement
+                            </h3>
                         </div>
                         <div
                             class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-black bg-gray-100 flex items-center justify-center transition-all duration-300 flex-shrink-0">
@@ -260,7 +307,8 @@
     </div>
     <div class="px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
         <div class="mb-12 w-1/2">
-            <div class="inline-block bg-purple-500 text-white px-2 py-1 rounded-md text-2xl lg:text-3xl font-semibold mb-4">
+            <div
+                class="inline-block bg-purple-500 text-white px-2 py-1 rounded-md text-2xl lg:text-3xl font-semibold mb-4">
                 Team</div>
             <p class="text-base lg:text-lg text-gray-600">
                 Meet the skilled and experienced team behind our successful digital marketing strategies
@@ -269,7 +317,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-12">
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
                         👨‍💼
                     </div>
                     <div class="flex-1 text-center">
@@ -287,7 +336,8 @@
             </div>
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
                         👩‍💼
                     </div>
                     <div class="flex-1 text-center">
@@ -300,12 +350,14 @@
                 </div>
                 <hr class="border-black mb-6">
                 <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
-                    7+ years of experience in project management and team leadership. Strong organizational and communication skills
+                    7+ years of experience in project management and team leadership. Strong organizational and
+                    communication skills
                 </p>
             </div>
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
                         👨‍💻
                     </div>
                     <div class="flex-1 text-center">
@@ -318,12 +370,14 @@
                 </div>
                 <hr class="border-black mb-6">
                 <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
-                    5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
+                    5+ years of experience in SEO and content creation. Proficient in keyword research and on-page
+                    optimization
                 </p>
             </div>
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
                         👩‍💻
                     </div>
                     <div class="flex-1 text-center">
@@ -336,12 +390,14 @@
                 </div>
                 <hr class="border-black mb-6">
                 <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
-                    3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis
+                    3+ years of experience in paid search advertising. Skilled in campaign management and performance
+                    analysis
                 </p>
             </div>
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
                         👨‍🎨
                     </div>
                     <div class="flex-1 text-center">
@@ -354,12 +410,14 @@
                 </div>
                 <hr class="border-black mb-6">
                 <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
-                    4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement
+                    4+ years of experience in social media marketing. Proficient in creating and scheduling content,
+                    analyzing metrics, and building engagement
                 </p>
             </div>
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
                         👩‍✍️
                     </div>
                     <div class="flex-1 text-center">
@@ -372,7 +430,8 @@
                 </div>
                 <hr class="border-black mb-6">
                 <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
-                    2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries
+                    2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content
+                    for various industries
                 </p>
             </div>
         </div>
@@ -385,18 +444,25 @@
             <div class="grid grid-cols-1 gap-6 mb-12 ">
                 <div>
                     <div class="flex items-center gap-3 mb-6 lg:mb-8">
-                            <div class="w-10 h-10 relative">
-                                <img src="./img/Digitalflow-logo.png" class="h-10 w-10 ">
-                            </div>
-                            <span class="text-lg lg:text-xl font-semibold text-white">DigitalFlow</span>
+                        <div class="w-10 h-10 relative">
+                            <img src="./img/Digitalflow-logo.png" class="h-10 w-10 ">
+                        </div>
+                        <span class="text-lg lg:text-xl font-semibold text-white">DigitalFlow</span>
                     </div>
                 </div>
                 <nav class="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 mb-12 lg:mb-16">
-                    <a href="#" class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">About Us</a>
-                    <a href="#" class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Services</a>
-                    <a href="#" class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Use Cases</a>
-                    <a href="#" class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Pricing</a>
-                    <a href="#" class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Blog</a>
+                    <a href="#"
+                        class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">About
+                        Us</a>
+                    <a href="#"
+                        class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Services</a>
+                    <a href="#"
+                        class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Use
+                        Cases</a>
+                    <a href="#"
+                        class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Pricing</a>
+                    <a href="#"
+                        class="text-white hover:text-purple-400 underline transition-colors text-sm lg:text-base">Blog</a>
                 </nav>
                 <div class="flex gap-3 lg:gap-4">
                     <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
@@ -410,72 +476,46 @@
                     </div>
                 </div>
             </div>
-        <div>
-            <div class="mb-6 lg:mb-8">
-                <div class="inline-block bg-purple-500 text-white px-2 py-1 rounded-md text-base lg:text-lg font-semibold mb-4 lg:mb-6">
-                    Contact us:
+            <div>
+                <div class="mb-6 lg:mb-8">
+                    <div
+                        class="inline-block bg-purple-500 text-white px-2 py-1 rounded-md text-base lg:text-lg font-semibold mb-4 lg:mb-6">
+                        Contact us:
+                    </div>
+                    <div class="space-y-2 lg:space-y-4 text-white">
+                        <p class="text-sm lg:text-base">
+                            Email: info@digitalflow.com
+                        </p>
+                        <p class="text-sm lg:text-base">
+                            Phone: 555-567-8901
+                        </p>
+                        <div class="text-sm lg:text-base">
+                            <p>Address: 1234 Main St</p>
+                            <p>Moonstone City, Stardust State 12345</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="space-y-2 lg:space-y-4 text-white">
-                    <p class="text-sm lg:text-base">
-                        Email: info@digitalflow.com
-                    </p>
-                    <p class="text-sm lg:text-base">
-                        Phone: 555-567-8901
-                    </p>
-                    <div class="text-sm lg:text-base">
-                        <p>Address: 1234 Main St</p>
-                        <p>Moonstone City, Stardust State 12345</p>
+                <div class="bg-slate-700 rounded-2xl p-6">
+                    <div class="flex flex-col sm:flex-row gap-3 lg:gap-4">
+                        <input type="email" placeholder="Email"
+                            class="flex-1 bg-transparent border border-white rounded-2xl px-3 lg:px-4 py-2 lg:py-3 text-white placeholder-white text-sm lg:text-base">
+                        <button class=" pt-2.5 pb-2.5 pr-7 pl-7 bg-purple-500 rounded-xl text-white">Subscribe to
+                            news</button>
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-700 rounded-2xl p-6">
-                <div class="flex flex-col sm:flex-row gap-3 lg:gap-4">
-                    <input type="email" placeholder="Email" class="flex-1 bg-transparent border border-white rounded-2xl px-3 lg:px-4 py-2 lg:py-3 text-white placeholder-white text-sm lg:text-base">
-                    <button class=" pt-2.5 pb-2.5 pr-7 pl-7 bg-purple-500 rounded-xl text-white">Subscribe to news</button>
-                </div>
-            </div>
-        </div>
         </div>
         <div class="border-t border-white pt-6 lg:pt-8">
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-white">
                 <p class="text-sm lg:text-base">
                     &copy; 2024 DigitalFlow. All rights reserved.
                 </p>
-                <a href="#" class="underline hover:text-purple-400 transition-colors text-sm lg:text-base">Privacy Policy</a>
+                <a href="#" class="underline hover:text-purple-400 transition-colors text-sm lg:text-base">Privacy
+                    Policy</a>
             </div>
         </div>
     </div>
-    <script>
-    const btn = document.getElementById("themeToggle");
-    const icon = document.getElementById("themeIcon");
-    const html = document.documentElement;
-
-    function setTheme(dark) {
-      if (dark) {
-        html.classList.add("dark");
-        html.classList.remove("light");
-        document.body.className =
-          " text-white transition-colors duration-300";
-        icon.src = "./img/sun.png";
-        document.body.style.backgroundColor = "#101828"; // your sun image
-      } else {
-        html.classList.remove("dark");
-        html.classList.add("light");
-        document.body.className =
-          "text-black transition-colors duration-300";
-        icon.src = "./img/moon.png";
-        document.body.style.backgroundColor = "white" // your moon image
-      }
-    }
-
-    // Default light mode
-    setTheme(false);
-
-    // Toggle theme on click
-    btn.addEventListener("click", () => {
-      setTheme(!html.classList.contains("dark"));
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
