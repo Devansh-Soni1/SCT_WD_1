@@ -10,14 +10,14 @@
 </head>
 
 <body class=" bg-white dark:bg-[#101828] dark:text-white overflow-x: hidden; transition-colors duration-300">
-    <div class="header bg-transparent h-16  flex flex-row items-center pt-2">
-        <div class="h-full w-1/2 ">
-            <a class="flex h-full flex-row items-center ml-20">
+    <div class="header bg-transparent h-16  flex justify-between items-center">
+        <div class="logo">
+            <a class="flex h-full items-center w-1/2 ml-10 md-ml-10 lg:ml-20 xl:ml-20 2xl:ml-20" href="#">
                 <img src="./img/Digitalflow-logo.png" class="h-10 w-10 ">
                 <p class="inline m-0.5 font-semibold text-xl">DigitalFlow</p>
             </a>
         </div>
-        <div class="flex h-full w-1/2 justify-evenly items-center text-sm">
+        <nav class="flex nav-option h-full justify-between w-1/2 items-center text-sm">
             <a>About Us</a>
             <a>Services</a>
             <a>Use cases</a>
@@ -29,32 +29,37 @@
             </button>
             <button class=" h-10 w-40  border bg-transparent p-1 rounded-xl hover:bg-gray-950/20 duration-300">Request a
                 quote</button>
-        </div>
+            </nav>
+        <div class="flex md:hidden justify-end pr-7">
+        <button id="mobileMenuBtn" class="text-3xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </div>
-    <div class="flex flex-row">
-        <div class="w-1/2 mt-17 ml-20">
-            <p class="text-5xl font-bold ">
+    </div>
+    <div class="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-2 sm:text-center md:text-center flex-row px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
+        <div class="">
+            <p class="text-5xl font-bold">
                 Navigating the digital landscape for success
             </p>
-            <p class="text-lg mt-10 w-10/12">
+            <p class="text-lg mt-10 ">
                 Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including SEO, PPC, social media marketing, and content creation.
             </p>
             <button class=" h-9.5 w-50 bg-slate-800 rounded-xl text-white mt-6 font-medium">Book a consulation</button>
         </div>
-        <div class="w-1/2 flex justify-center">
+        <div class="flex justify-center">
             <img src="./img/circle-img.png" class="h-96 w-96">
         </div>
     </div>
     <div class="px-4 sm:px-8 lg:px-24 py-12 lg:py-16">
         <div class="w-1/2">
-            <div class=" inline-block p-1 text-center bg-purple-500 rounded-md text-white mt-4 font-medium text-[24px]">Services
+            <div class=" inline-block p-1 text-center bg-purple-500 rounded-md text-white font-medium text-[24px]">Services
             </div>
             <p class=" pr-3 text-gray-600 text-[15px] leading-6 mt-3.5">At our digital marketing agency, we offer a range of services
                 to help businesses grow and succeed online. These services include:</p>
         </div>
         <div>
-            <div class=" service-box mt-10 grid grid-cols-2 gap-10 ">
+            <div class=" service-box mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 ">
                 <div class="  bg-gray-100 p-6 border-2  border-black rounded-[30px] shadow-[0px_4px_0px_#000]">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                         <div class="flex-1 order-2 sm:order-1">
@@ -261,7 +266,7 @@
                 Meet the skilled and experienced team behind our successful digital marketing strategies
             </p>
         </div>
-        <div class="grid grid-cols-3 gap-8 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-12">
             <div class=" bg-white border-2 border-black p-6 rounded-[30px] shadow-[0px_5px_0px_0px_#000] ">
                 <div class="flex flex-row items-center gap-4 mb-6">
                     <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center text-3xl border-2 border-black flex-shrink-0">
@@ -452,8 +457,7 @@
         document.body.className =
           " text-white transition-colors duration-300";
         icon.src = "./img/sun.png";
-        document.body.style.backgroundColor = "#101828";
-        img.style.filter = "brightness(0) saturate(100%) invert(24%) sepia(89%) saturate(7500%) hue-rotate(2deg) brightness(99%) contrast(112%)"; // your sun image
+        document.body.style.backgroundColor = "#101828"; // your sun image
       } else {
         html.classList.remove("dark");
         html.classList.add("light");
